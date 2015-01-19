@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es-ES" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feria virtual Inmobiliaria 2014</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" media="all" href="css/bootstrap.min.css">
+    <link rel="stylesheet" media="all" href="css/normalize.css">
+    <!-- Metrocuadrado -->
+    <link rel="stylesheet" media="all" href="css/bootstrap-theme-feria.css">
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="bg-verde-claro">
+    <div class="bg-verde-claro bg-header-movil">
+        <span class="bg-guirnalda hidden-xs"></span>
+        <div class="container">
+            <header class="col-lg-12 col-md-12 col-sm-12 clearfix ">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-10 logo-feria-virtual">
+                        <a href="" title="Feria Virtual Inmobiliaria - 2014"><img title="Feria Virtual Inmobiliaria - 2014" alt="Feria Virtual Inmobiliaria - 2014" src="img/logo-feria-virtual.png" class="img-responsive"></a>
+                    </div>
+                    <span class="patrocinado-por col-sm-6 col-xs-7 hidden-lg hidden-md"><img class="img-responsive" title="Patrocinado por: Metrocuadrado" src="img/patrocinador.png"></span>
+                    <div class="col-lg-8 col-md-9 col-sm-12 col-xs-2 nav-internas">
+                        <div class="row">
+                            <nav class="navbar navbar-default" role="navigation">
+                                <div class="container-fluid">
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#-navbar-collapse-1">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse" id="-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li class="hidden-xs"><a href="#">Inicio</a></li>
+                                            <li><a href="#"><span class="icon-menu-usados"></span> Inmuebles usados</a></li>
+                                            <li><a href="#"><span class="icon-menu-nuevos"></span> Inmuebles nuevos</a></li>
+                                            <li><a href="#"><span class="icon-menu-participantes"></span> Participantes</a></li>
+                                            <li class="hidden-xs"><a href="#">Calculadora</a></li>
+                                            <li><a href="#"><span class="icon-menu-noticias"></span> Noticias</a></li>
+                                        </ul>
+                                        <div class="navbar-right hidden-xs">
+                                            <span class="icon-finaliza"></span>
+                                            <div id="countdown" class="contador-dias clearfix"></div>
+                                        </div><!-- navbar-right -->
+                                    </div><!-- /.navbar-collapse -->
+                                </div><!-- /.container-fluid -->
+                            </nav>
+                            <span class="patrocinado-por hidden-xs hidden-sm"><img class="img-responsive" title="Patrocinado por: Metrocuadrado" src="img/patrocinador.png"></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div> <!-- container --> 
+    </div>  
+    <span class="bg-guirnalda visible-xs"></span>
+	<div class="container">
+        <!-- Modal contactar-->
+        <div class="modal fade" id="contactarVendedor" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content modal-contactar">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <span class="tipo-inmueble">Proyecto</span>
+                        <div class="title-item">
+                            <h4>Torres del Bosque Reservado</h4>
+                            <i>Apartamento. Chicó. Bogotá.</i>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="info-constructora">
+                            <div class="datos-constructora">
+                                <div class="nombre-constructora">
+                                    <p>AMARILO</p>
+                                    <p>465-9876 / 234-9876</p>
+                                </div>
+                                <div class="agente-constructora">
+                                    <p>AGENTE INMMOBILIARIO</p>
+                                    <p>Ángela Gutierrez</p>
+                                    3219087654 
+                                </div>                 
+                            </div>
+                            <div class="logo-constructora">
+                                <img src="borrar/constructora.jpg" alt="Amarilo">
+                            </div>
+                        </div>
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="control-label">Nombre:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Teléfono:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Email:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Comentarios:</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Acepto <a target="_blank" href="/disclaimer/politicas.html?keepThis=true&amp;TB_iframe=true&amp;height=450&amp;width=350">Políticas y Términos - Aviso de privacidad</a> y enviar mis datos al anunciante
+                                </label>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </fieldset>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->        
+        <div class=" clearfix">
+            <ul class="breadcrumb col-lg-12 col-md-12">
+                <li><a href="#">Inicio</a></li>
+                <li class="active">Inmuebles Nuevos</li>
+            </ul>
+        </div>
+        <div class="col-lg-6 col-md-7 cont-galeria">
+            <h1 class="title-detalle">Inmueble <strong>Nuevo</strong> <span class="iconDetalle-estrella"></span></h1>
+            <div class="info-proyecto media hidden-lg hidden-md">
+                <figure class="pull-left hidden-xs"><img src="borrar/logo-listado-expositores.jpg" title="Amarilo" alt="Amarilo"></figure>
+                <div class="title-item media-body">
+                    <h4><a href="#">Torres del Bosque Reservado</a></h4>
+                    <i>Apartamento. Chicó. Bogotá.</i>
+                    <em class="visible-xs">Á. Priv.  300m2  l  Á. Const. 350m2</em>
+                </div>        
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tipo1" data-toggle="tab">Tipo 1</a></li>
+                <li><a href="#tipo2" data-toggle="tab">Tipo 2</a></li>
+                <li><a href="#tipo3" data-toggle="tab">Tipo 3</a></li>
+                <li><a href="#tipo4" data-toggle="tab">Tipo 4</a></li>
+                <li class="tab-video"><a href="#video" data-toggle="tab"><span class="iconDetalle-video"></span>Video</a></li>
+            </ul>
+            <div class="tab-content tab-cont-detalle">
+                <div class="tab-pane fade active in" id="tipo1">
+                    <em class="area-construida hidden-xs">Inmueble Área priv. 200m2   -   Área const. 300m2</em>
+                    <div id="gallery-1" class="royalSlider rsDefault">
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria.jpg" href="borrar/detalle-feria.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-02.jpg" href="borrar/detalle-feria-02.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-02.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-03.jpg" href="borrar/detalle-feria-03.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-03.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-04jpg" href="borrar/detalle-feria-04.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-04.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-05.jpg" href="borrar/detalle-feria-05.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-05.jpg" /></a>
+                    </div>
+                    <span class="descuento-inmueble"><b>-20%</b> Gastos de escrituración</span>
+                    <div class="item"><span class="precio-item"><i class="visible-xs">Precio de feria</i> $150’000.000</span></div>
+                 </div>
+                <div class="tab-pane fade" id="tipo2">
+                    <em class="area-construida hidden-xs">Inmueble Área priv. 200m2   -   Área const. 300m2</em>
+                    <div id="gallery-2" class="royalSlider rsDefault">
+                        <a class="rsImg bugaga" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria.jpg" href="borrar/detalle-feria.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-02.jpg" href="borrar/detalle-feria-02.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-02.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-03.jpg" href="borrar/detalle-feria-03.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-03.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-04jpg" href="borrar/detalle-feria-04.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-04.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-05.jpg" href="borrar/detalle-feria-05.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-05.jpg" /></a>
+                    </div>
+                    <span class="descuento-inmueble"><b>-20%</b> Gastos de escrituración</span>
+                    <div class="item"><span class="precio-item"><i class="visible-xs">Precio de feria</i> $120’000.000</span></div>
+                </div>
+                <div class="tab-pane fade" id="tipo3">
+                    <em class="area-construida hidden-xs">Inmueble Área priv. 200m2   -   Área const. 300m2</em>
+                    <div id="gallery-3" class="royalSlider rsDefault">
+                        <a class="rsImg bugaga" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria.jpg" href="borrar/detalle-feria.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-02.jpg" href="borrar/detalle-feria-02.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-02.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-03.jpg" href="borrar/detalle-feria-03.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-03.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-04jpg" href="borrar/detalle-feria-04.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-04.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-05.jpg" href="borrar/detalle-feria-05.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-05.jpg" /></a>
+                    </div>
+                    <span class="descuento-inmueble"><b>-20%</b> Gastos de escrituración</span>
+                    <div class="item"><span class="precio-item"><i class="visible-xs">Precio de feria</i> $89’000.000</span></div>
+                </div>
+                <div class="tab-pane fade" id="tipo4">
+                    <em class="area-construida hidden-xs">Inmueble Área priv. 200m2   -   Área const. 300m2</em>
+                    <div id="gallery-4" class="royalSlider rsDefault">
+                        <a class="rsImg bugaga" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria.jpg" href="borrar/detalle-feria.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-02.jpg" href="borrar/detalle-feria-02.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-02.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-03.jpg" href="borrar/detalle-feria-03.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-03.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-04jpg" href="borrar/detalle-feria-04.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-04.jpg" /></a>
+                        <a class="rsImg" data-rsw="400" data-rsh="555"  data-rsBigImg="borrar/detalle-feria-05.jpg" href="borrar/detalle-feria-05.jpg"><img width="96" height="72" class="rsTmb" src="borrar/detalle-feria-05.jpg" /></a>
+                    </div>
+                    <span class="descuento-inmueble"><b>-20%</b> Gastos de escrituración</span>
+                    <div class="item"><span class="precio-item"><i class="visible-xs">Precio de feria</i> $200’000.000</span></div>
+                </div>
+                <div class="tab-pane fade" id="video">
+                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                </div>
+            </div>
+            <div class="clearfix hidden-sm hidden-xs">
+                <div class="personas-interesadas clearfix">
+                    <b>22</b>             
+                    <small>Personas han mostrado interés por este inmueble</small>
+                </div>
+                <div class="compartir-inmueble">
+                    <label>Compartir este inmueble</label>
+                    <a href="#" title="Facebook"><span class="iconDetalle-facebook">Facebook</span></a>
+                    <a href="#" title="Twitter"><span class="iconDetalle-twitter">Twitter</span></a>
+                    <a href="#" title="Google+"><span class="iconDetalle-google">Google</span></a>
+                    <a href="#" title="Compartir"><span class="iconDetalle-compartir">Compartir</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-5 contactar-vendedor clearfix">
+        	<div class="visible-xs col-xs-6">
+                <button type="button" class="btn btn-primary " data-target="#contactarVendedor" data-toggle="modal"><span class="glyphicon glyphicon-envelope"></span> Contactar </button>
+            </div>
+        	<div class="visible-xs col-xs-6 text-right">
+                <a href="" class="btn btn-primary">3103245678</a>
+            </div>
+            <div class="info-proyecto media hidden-sm hidden-xs">
+                <figure class="pull-left"><img src="borrar/logo-listado-expositores.jpg" title="Amarilo" alt="Amarilo"></figure>
+                <div class="title-item media-body">
+                    <h4><a href="#">Torres del Bosque Reservado</a></h4>
+                    <i>Apartamento. Chicó. Bogotá.</i>
+                </div>        
+            </div>
+            <div class="collapse-contacto clearfix hidden-xs">
+            	<div class="pull-left hidden-sm">
+                    Contactar al vendedor
+                </div>
+            	<div class="pull-left visible-sm">
+                    <a data-target="#contactoVendedor" data-toggle="collapse" >Contactar al vendedor</a>
+                    <span class="caret"></span>
+                </div>
+                <div class="pull-right">
+                <button type="button" class="btn btn-secondary btn-sm" data-toggle="collapse" data-target="#datosConstructora"> Ver teléfono </button>
+                </div>
+            </div>
+            <div id="datosConstructora" class="collapse fade media constructora">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="borrar/arConstructores.jpg" alt="...">
+                </a>
+                <div class="media-body">
+                    <h5>AR CONSTRUCTORES</h5>
+                    313 4567893 - (1)2345676
+                    <address>Calle 99 N0. 34 - 54  l  Oficina 304</address>
+                    <em>Agente inmobiliario: Alonso Jimenez</em>
+                    Celular: 3290876578
+                </div>
+            </div>
+            <div id="contactoVendedor" class="contacto-vendedor hidden-xs collapse fade in">
+                <fieldset>
+                    <div class="form-group">
+                        <label>Nombre:</label>
+                        <input type="text" class="form-control">
+                    </div>            
+                    <div class="form-group">
+                        <label>Teléfonos:</label>
+                        <input type="text" class="form-control">
+                    </div>            
+                    <div class="form-group">
+                        <label>E-mail:</label>
+                        <input type="text" class="form-control">
+                    </div>            
+                    <div class="form-group">
+                        <label>Mensaje:</label>
+                        <textarea rows="3" class="form-control"></textarea>
+                    </div>  
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Acepto <a target="_blank" href="/disclaimer/politicas.html?keepThis=true&amp;TB_iframe=true&amp;height=450&amp;width=350">Políticas y Términos - Aviso de privacidad</a> y enviar mis datos al anunciante
+                        </label>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Contactar</button>
+                </fieldset>
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-10 col-md-offset-1">
+            <div class="row">
+                <div class="tab-content">
+                    <div class="tab-pane fade active in" id="tipo1">
+                        <div class="col-lg-8 col-md-8 col-sm-7">
+                            <h2 class="title-ofrece">
+                                <span class="iconDetalle-arrow-title hidden-xs"></span> 
+                                ESTE INMUEBLE OFRECE:
+                            </h2> 
+                            <ul class="list-caracteristicas">
+                                <li><span>&raquo;</span> Barrio Santa Bárbara</li>
+                                <li><span>&raquo;</span> 3 Baños</li>
+                                <li><span>&raquo;</span> Área: 350m2</li>
+                                <li><span>&raquo;</span> Estrato 6</li>
+                                <li><span>&raquo;</span> 2 Garajes</li>
+                                <li><span>&raquo;</span> 5 Habitaciones</li>
+                                <li><span>&raquo;</span> Área construida: 325 m2</li>
+                            </ul>
+                            <blockquote class="descripcion-inmueble">
+                                <strong> Descripción de este inmueble:</strong>
+                                Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque. Ineget sapien sed, sit duis vestibulum ultricies, placerat morbi amet vel, nullam in in lorem vel. In molestie elit dui dictum, praesent nascetur pulvinar sed, in dolor pede inaliquam, risus nec error quis pharetra. Eros metus quam augue suspendisse, metus rutrum risus erat in. In ultrices quo ut lectus, etiam vestibulum urna a est, pretium.
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tipo2">
+                        <div class="col-lg-8 col-md-8 col-sm-7">
+                            <h2 class="title-ofrece">
+                                <span class="iconDetalle-arrow-title hidden-xs"></span> 
+                                ESTE INMUEBLE OFRECE:
+                            </h2> 
+                            <ul class="list-caracteristicas">
+                                <li><span>&raquo;</span> Barrio Santa Bárbara</li>
+                                <li><span>&raquo;</span> 2 Baños</li>
+                                <li><span>&raquo;</span> Área: 200m2</li>
+                                <li><span>&raquo;</span> Estrato 6</li>
+                                <li><span>&raquo;</span> 2 Garajes</li>
+                                <li><span>&raquo;</span> 5 Habitaciones</li>
+                                <li><span>&raquo;</span> Área construida: 325 m2</li>
+                            </ul>
+                            <blockquote class="descripcion-inmueble">
+                                <strong> Descripción de este inmueble:</strong>
+                                Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque. Ineget sapien sed, sit duis vestibulum ultricies, placerat morbi amet vel, nullam in in lorem vel. In molestie elit dui dictum, praesent nascetur pulvinar sed, in dolor pede inaliquam, risus nec error quis pharetra. Eros metus quam augue suspendisse, metus rutrum risus erat in. In ultrices quo ut lectus, etiam vestibulum urna a est, pretium.
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-5 pauta-detalle-300 hidden-xs">
+                	<img src="borrar/pauta-300-detalle.jpg">
+                </div>
+            </div>
+        </div>
+    </div><!-- container -->
+    <div class="pauta-full-detalle text-center hidden-xs">
+    	<a href="#">
+            <img class="img-responsive" src="borrar/pauta-full-detalle.jpg">
+        </a>
+    </div>
+    <div class="container">
+    	<h5 class="title-label">Inmuebles relacionados con su búsqueda:</h5>
+        <ul class="inmuebles-estado inmuebles-nuevos clearfix row">
+            <li class="col-lg-4 col-md-4 col-sm-4">
+                <dl class="item">
+                    <dt class="title-item">
+                        <h4><a href="#">Torres del Bosque Reservado</a></h4>
+                        <i>Apartamento. Chicó. Bogotá.</i>
+                    </dt>
+                    <dd class="mas-info margin-bottom">
+                        <span class="descuento-inmueble descuento-detalle"><b>-20%</b> Gastos de escrituración</span>
+                        <span class="tipo-inmueble">Proyecto</span>
+                        <figure>
+                            <a href="#">
+                            <img class="img-responsive" title="Torres del Bosque Reservado" alt="Torres del Bosque Reservado" src="img/img-clasificado-1.jpg">
+                            </a>
+                        </figure>
+                    	<div class="logo-constructora">
+                        	<img src="borrar/constructora.jpg" alt="Amarilo">
+                    	</div>
+                        <strong class="area-construida">Á. Priv.  300m2  l  Á. Const. 350m2</strong>
+                    </dd>
+                    <dd class="precio-item"><i>Desde</i>$300'000.000</dd>
+                    <dd class="contacto-inmueble"><span class="glyphicon glyphicon-envelope"></span> <a href="#" data-toggle="modal" data-target="#contactarVendedor">Contactar al vendedor</a></dd>
+                    <a href="#" class="btn btn-primary">Ver proyecto</a>
+                </dl>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-4">
+                <dl class="item">
+                    <dt class="title-item">
+                        <h4><a href="#">Torres del Bosque Reservado</a></h4>
+                        <i>Apartamento. Chicó. Bogotá.</i>
+                    </dt>
+                    <dd class="mas-info margin-bottom">
+                        <span class="descuento-inmueble descuento-detalle"><b>-20%</b> Gastos de escrituración</span>
+                        <span class="tipo-inmueble">Proyecto</span>
+                        <figure>
+                            <a href="#">
+                            <img class="img-responsive" title="Torres del Bosque Reservado" alt="Torres del Bosque Reservado" src="img/img-clasificado-1.jpg">
+                            </a>
+                        </figure>
+                    	<div class="logo-constructora">
+                        	<img src="borrar/constructora.jpg" alt="Amarilo">
+                    	</div>
+                        <strong class="area-construida">Á. Priv.  300m2  l  Á. Const. 350m2</strong>
+                    </dd>
+                    <dd class="precio-item"><i>Desde</i>$300'000.000</dd>
+                    <dd class="contacto-inmueble"><span class="glyphicon glyphicon-envelope"></span> <a href="#" data-toggle="modal" data-target="#contactarVendedor">Contactar al vendedor</a></dd>
+                    <a href="#" class="btn btn-primary">Ver proyecto</a>
+                </dl>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-4">
+                <dl class="item">
+                    <dt class="title-item">
+                        <h4><a href="#">Torres del Bosque Reservado</a></h4>
+                        <i>Apartamento. Chicó. Bogotá.</i>
+                    </dt>
+                    <dd class="mas-info margin-bottom">
+                        <span class="descuento-inmueble descuento-detalle"><b>-20%</b> Gastos de escrituración</span>
+                        <span class="tipo-inmueble">Proyecto</span>
+                        <figure>
+                            <a href="#">
+                            <img class="img-responsive" title="Torres del Bosque Reservado" alt="Torres del Bosque Reservado" src="img/img-clasificado-1.jpg">
+                            </a>
+                        </figure>
+                    	<div class="logo-constructora">
+                        	<img src="borrar/constructora.jpg" alt="Amarilo">
+                    	</div>
+                        <strong class="area-construida">Á. Priv.  300m2  l  Á. Const. 350m2</strong>
+                    </dd>
+                    <dd class="precio-item"><i>Desde</i>$300'000.000</dd>
+                    <dd class="contacto-inmueble"><span class="glyphicon glyphicon-envelope"></span> <a href="#" data-toggle="modal" data-target="#contactarVendedor">Contactar al vendedor</a></dd>
+                    <a href="#" class="btn btn-primary">Ver proyecto</a>
+                </dl>
+            </li>
+        </ul>
+    </div><!-- container -->
+    <footer>
+    	<div class="bg-verde">
+            <div class="container">
+                <div class="col-lg-3 col-md-3 col-sm-4 info-oficinas">
+                    <a href="/"><img alt="Logo Metrocuadrado" src="img/logo-metro-footer.png"></a>
+                    <h5>Oficinas Metrocuadrado</h5>
+                    <address>
+                        Avenida Calle 26 No. 68B &ndash; 70<br>
+                        Casa Editorial El Tiempo, Bogotá, Colombia<br>
+                        Teléfonos servicio al cliente en Bogotá<br>
+                        (571) 426 6000 opción 3, opción 2<br>
+                        Fuera de Bogotá: 01 8000 110 990<br>
+                        PBX: (571) 426 6550 - 294 0100<br>
+                        FAX: (571) 294 0159 Opción: 7 Ext. 5919<br>
+                        Tel. Cali: (57) 321 205 6075<br>
+                        Tel. Medellín: (574) 250 7988 Ext. 153<br>
+                        Línea nacional: 01 8000 115 252<br>
+                        <a href="mailto:contactenos@metrocuadrado.com">contactenos@metrocuadrado.com</a> </p>            
+                    </address>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
+                    <ul class="menu-footer">
+                        <li>&raquo; Inicio</li>
+                        <li>&raquo; Buscar inmuebles Usados</li>
+                        <li>&raquo; Buscar po inmuebles nuevos</li>
+                        <li>&raquo; Decoración</li>
+                        <li>&raquo; Calculadora</li>
+                        <li>&raquo; Noticias</li>
+                        <li>&raquo; Contáctenos</li>
+                        <li>&raquo; Ayuda</li>
+                        <li>&raquo; Mapa del sitio</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 redes-sociales">
+                    <h6>Síguenos en:</h6>
+                    <a href="https://plus.google.com/u/0/112174026277288480186?rel=author" target="_blank" title="Google+">
+                        <img width="1" height="1" class="icoGooglePlus" src="img/img_trans.gif" alt="Google+">
+                    </a>
+                    <a href="http://www.facebook.com/metrocuadradocom" target="_blank" title="Facebook">
+                        <img width="1" height="1" class="icoFacebook" src="img/img_trans.gif" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com/metro_cuadrado" target="_blank" title="Twitter">
+                        <img width="1" height="1" class="icoTwitter" src="img/img_trans.gif" alt="Twitter">
+                    </a>
+                    <a href="http://www.youtube.com/user/METROCUADRADOcom" target="_blank" title="YouTube">
+                        <img width="1" height="1" class="icoYouTube" src="img/img_trans.gif" alt="YouTube">
+                    </a>
+                    <a href="http://pinterest.com/mtcuadra/" target="_blank" title="Pinterest">
+                        <img width="1" height="1" class="icoPinterest" src="img/img_trans.gif" alt="Pinterest">
+                    </a>            
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-sm-12">
+                    <div class="visible-xs nuestra-red">
+                        <a href="javascript:;" onClick="$('.moduloMapaNavegacion').slideToggle();$(this).toggleClass('toggleTriangle');$('html, body').animate({scrollTop: '10000px'}, 500);return false;" class="linkPortales toggleTriangle ">Mapa de navegación</a>
+                        <div class="moduloMapaNavegacion clearfix moduloColapsable">
+                            <ul>
+                                <li>Inicio</li>
+                                <li>Buscar inmuebles Usados</li>
+                                <li>Buscar po inmuebles nuevos</li>
+                                <li>Decoración</li>
+                                <li>Calculadora</li>
+                                <li>Noticias</li>
+                                <li>Contáctenos</li>
+                                <li>Ayuda</li>
+                                <li>Mapa del sitio</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <figure class="col-lg-1 col-md-2 col-sm-2"><img class="img-responsive" alt="Logo El Tiempo" src="img/logo-tiempo-footer.png" ></figure>
+                
+                <p class="col-lg-7 col-md-7 col-sm-8 copyright">Copyright &copy; <span id="gYearFooter"></span> Metrocuadrado. Usar este sitio implica que usted acepta nuestras <a class="thickbox" href="/disclaimer/politicas.html?keepThis=true&amp;TB_iframe=true&amp;height=450&amp;width=350" target="_blank">Políticas y Términos</a> Prohibida su reproducción total o parcial, así como su traducción a cualquier idioma sin autorización escrita de su titular.</p>
+                <a rel="nofollow" target="_blank" class="sicLogo col-lg-2 col-md-3 col-xs-5 col-sm-2" href="http://www.sic.gov.co/es/"><img src="img/superintendencia-footer.png" title="Industria y Comercia SUPERINTENDENCIA"></a>
+            </div><!-- container -->
+    	</div><!-- bg-verde -->
+    </footer><!-- footer -->
+<!-- JAVASCRIPT --> 
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/biblioteca-activadores.js"></script> 
+<script src="js/countdown-timer.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/gallery.carousel.min.js"></script>
+
+    <script>
+    jQuery(document).ready(function($) {
+	  $('#gallery-1,#gallery-2,#gallery-3, #gallery-4').royalSlider({
+		controlNavigation: 'thumbnails',
+		loop: false,
+		autoScaleSlider: true,
+    	autoScaleSliderWidth: 500,     
+    	autoScaleSliderHeight: 400,
+		imageScaleMode: 'none',
+		navigateByClick: true,
+		arrowsNav:true,
+		arrowsNavAutoHide: true,
+		arrowsNavHideOnTouch: true,
+		thumbs: {
+		  appendSpan: true,
+		  firstMargin: true,
+		}
+	  });
+	   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+		   var sliderEl = $( $(e.target).attr('href') ).find('#gallery-2,#gallery-3, #gallery-4');
+		   if(sliderEl.length) {
+			  sliderEl.royalSlider('updateSliderSize', true);
+		   }
+		})	  
+    });
+</script>
+</body>
+</html>

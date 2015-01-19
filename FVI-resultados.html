@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es-ES" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feria virtual Inmobiliaria 2014</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" media="all" href="css/bootstrap.min.css">
+    <link rel="stylesheet" media="all" href="css/normalize.css">
+    <!-- Metrocuadrado -->
+    <link rel="stylesheet" media="all" href="css/bootstrap-theme-feria.css">
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="bg-verde-claro">
+    <div class="bg-verde-claro bg-header-movil">
+        <span class="bg-guirnalda hidden-xs"></span>
+        <div class="container">
+            <header class="col-lg-12 col-md-12 col-sm-12 clearfix ">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-10 logo-feria-virtual">
+                        <a href="" title="Feria Virtual Inmobiliaria - 2014"><img title="Feria Virtual Inmobiliaria - 2014" alt="Feria Virtual Inmobiliaria - 2014" src="img/logo-feria-virtual.png" class="img-responsive"></a>
+                    </div>
+                    <span class="patrocinado-por col-sm-6 col-xs-7 hidden-lg hidden-md"><img class="img-responsive" title="Patrocinado por: Metrocuadrado" src="img/patrocinador.png"></span>
+                    <div class="col-lg-8 col-md-9 col-sm-12 col-xs-2 nav-internas">
+                        <div class="row">
+                            <nav class="navbar navbar-default" role="navigation">
+                                <div class="container-fluid">
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#-navbar-collapse-1">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse" id="-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li class="hidden-xs"><a href="#">Inicio</a></li>
+                                            <li><a href="#"><span class="icon-menu-usados"></span> Inmuebles usados</a></li>
+                                            <li><a href="#"><span class="icon-menu-nuevos"></span> Inmuebles nuevos</a></li>
+                                            <li><a href="#"><span class="icon-menu-participantes"></span> Participantes</a></li>
+                                            <li class="hidden-xs"><a href="#">Calculadora</a></li>
+                                            <li><a href="#"><span class="icon-menu-noticias"></span> Noticias</a></li>
+                                        </ul>
+                                        <div class="navbar-right hidden-xs">
+                                            <span class="icon-finaliza"></span>
+                                            <div id="countdown" class="contador-dias clearfix"></div>
+                                        </div><!-- navbar-right -->
+                                    </div><!-- /.navbar-collapse -->
+                                </div><!-- /.container-fluid -->
+                            </nav>
+                            <span class="patrocinado-por hidden-xs hidden-sm"><img class="img-responsive" title="Patrocinado por: Metrocuadrado" src="img/patrocinador.png"></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div> <!-- container --> 
+    </div>  
+    <span class="bg-guirnalda visible-xs"></span>
+	<div class="container">
+        <div class="col-lg-12 col-md-12">
+            <ul class="breadcrumb">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Buscar</a></li>
+                <li><a href="#">Apartamento</a></li>
+                <li class="active">Venta</li>
+            </ul>
+        </div>
+    </div><!-- container -->
+    <div class="filtro-resultados hidden-xs">
+    	<em>Usted encontró 20 “Proyectos apartamentos” de feria</em>
+        <div class="cont-filtro">
+        	<div class="container">
+            	<div class="col-lg-8 col-md-10 col-lg-offset-2 col-md-offset-1">
+                    <label>Filtre su búsqueda</label>
+                    <fieldset class="filtros">
+                        <select class="selectpicker" data-style="green-select">
+                            <option>Nuevos y Usados</option>
+                            <option>Nuevos</option>
+                            <option>Usados</option>
+                        </select>
+                        <select class="selectpicker" data-style="green-select">
+                            <option>Ciudad</option>
+                        </select>
+                        <select class="selectpicker" data-style="green-select">
+                            <option>Precio</option>
+                        </select>
+                        <select class="selectpicker" data-style="green-select">
+                            <option>Tipo de inmueble</option>
+                        </select>
+                        <button class="btn btn-inverse">
+                            Filtrar
+                        </button>
+                    </fieldset>
+                </div>
+            </div>
+        </div><!-- cont-filtro -->
+    </div><!-- filtro-resultados -->
+    <!-- Modal contactar-->
+    <div class="modal fade" id="contactarVendedor" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content modal-contactar">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <span class="tipo-inmueble">Proyecto</span>
+                    <div class="title-item">
+                        <h4>Torres del Bosque Reservado</h4>
+                        <i>Apartamento. Chicó. Bogotá.</i>
+                    </div>
+                </div>
+                <div class="modal-body">
+                	<div class="info-constructora">
+                    	<div class="datos-constructora">
+                        	<div class="nombre-constructora">
+                                <p>AMARILO</p>
+                                <p>465-9876 / 234-9876</p>
+                            </div>
+                        	<div class="agente-constructora">
+                                <p>AGENTE INMMOBILIARIO</p>
+                                <p>Ángela Gutierrez</p>
+                                3219087654 
+                            </div>                 
+                        </div>
+                    	<div class="logo-constructora">
+                        	<img src="borrar/constructora.jpg" alt="Amarilo">
+                    	</div>
+                    </div>
+                    <fieldset>
+                        <div class="form-group">
+                            <label class="control-label">Nombre:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Teléfono:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Email:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Comentarios:</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Acepto <a target="_blank" href="/disclaimer/politicas.html?keepThis=true&amp;TB_iframe=true&amp;height=450&amp;width=350">Políticas y Términos - Aviso de privacidad</a> y enviar mis datos al anunciante
+                            </label>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+					</fieldset>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->        
+   	<div class="container">
+    	<div class="row cont-ordenar">
+            <div class="col-lg-6 col-md-6 col-sm-12 form-inline text-right pull-right hidden-xs" role="form">
+                <div class="form-group">
+                    <label>Ordenar por:</label>
+                    <select class="selectpicker" data-style="btn-primary">
+                        <option>Ciudad desde la A - Z</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h3>Proyectos <b>destacados</b></h3>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <ul class="inmuebles-destacados clearfix">
+                <li>
+                    <dl class="item clearfix">
+                        <dt class="title-item">
+                            <h4><a href="#">Torres del Bosque Reservado</a></h4>
+                            <i>Apartamento. Chicó. Bogotá.</i>
+                        </dt>
+                        <dd class="mas-info margin-bottom">
+                            <span class="descuento-inmueble"><b>-20%</b> Gastos de escrituración</span>
+                            <span class="tipo-inmueble">Proyecto</span>
+                            <figure>
+                                <a href="#">
+                                <img class="img-responsive" title="Torres del Bosque Reservado" alt="Torres del Bosque Reservado" src="borrar/img-clasificado-destacado.jpg">
+                                </a>
+                            </figure>
+                            <em class="info-inmueble-destacado clearfix">
+                                <a class="logo-constructora pull-left" href="#"><img src="borrar/constructora.jpg" alt="Constructara Amarilo"></a>
+                                <div class="pull-left">
+                                    <strong class="area-construida visible-xs">Á. Priv.  300m2  l  Á. Const. 350m2</strong>
+                                    <strong class="precio-item"><i>Desde</i>$300'000.000</strong>
+                                    <strong class="area-construida hidden-xs">Á. Priv.  300m2  l  Á. Const. 350m2</strong>
+                                </div>
+                            </em>
+                        </dd>
+                        <dd class="contacto-inmueble bg-verde col-lg-6 col-md-6 col-sm-6 pull-right"><span class="glyphicon glyphicon-envelope"></span> <a href="#" data-toggle="modal" data-target="#contactarVendedor">Contactar al vendedor</a></dd>
+                        <a href="#" class="btn btn-primary col-lg-6 col-md-6 col-sm-6">Ver proyecto</a>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="item clearfix">
+                        <dt class="title-item">
+                            <h4><a href="#">Torres del Bosque Reservado</a></h4>
+                            <i>Apartamento. Chicó. Bogotá.</i>
+                        </dt>
+                        <dd class="mas-info margin-bottom">
+                            <span class="descuento-inmueble"><b>-20%</b> Gastos de escrituración</span>
+                            <span class="tipo-inmueble">Proyecto</span>
+                            <figure>
+                                <a href="#">
+                                <img class="img-responsive" title="Torres del Bosque Reservado" alt="Torres del Bosque Reservado" src="borrar/img-clasificado-destacado.jpg">
+                                </a>
+                            </figure>
+                            <em class="info-inmueble-destacado clearfix">
+                                <a class="pull-left logo-constructora" href="#"><img src="borrar/constructora.jpg" alt="Constructara Amarilo"></a>
+                                <div class="pull-left">
+                                    <strong class="area-construida visible-xs">Á. Priv.  300m2  l  Á. Const. 350m2</strong>
+                                    <strong class="precio-item"><i>Desde</i>$300'000.000</strong>
+                                    <strong class="area-construida hidden-xs">Á. Priv.  300m2  l  Á. Const. 350m2</strong>
+                                </div>
+                            </em>
+                        </dd>
+                        <dd class="contacto-inmueble bg-verde col-lg-6 col-md-6 col-sm-6 pull-right"><span class="glyphicon glyphicon-envelope"></span> <a href="#" data-toggle="modal" data-target="#contactarVendedor">Contactar al vendedor</a></dd>
+                        <a href="#" class="btn btn-primary col-lg-6 col-md-6 col-sm-6">Ver proyecto</a>
+                    </dl>
+                </li>
+            </ul>
+      	</div>
+        <div class="row">
+            <div class="cont-filtro-ordenar col-xs-12 visible-xs">
+                <h4 class="titulo-verde clearfix filtro-resultados">
+                    <div class="col-xs-12">
+                        <em>Usted encontró 20 “Proyectos apartamentos” de feria</em> <span class="caret"></span>
+                        <button class="btn btn-inverse" data-toggle="modal" data-target="#filtrarBusqueda">
+                            Filtrar resultados
+                        </button>
+                    </div>
+                </h4>
+                <div class="col-xs-12 ordenar-movil" role="form">
+                    <div class="form-group clearfix">
+                        <select class="selectpicker" data-style="btn-primary">
+                            <option>Ordenar por</option>
+                        </select>
+                    </div>
+                </div>
+            </div><!-- cont-filtro-ordenar -->
+            <!-- Modal -->
+            <div class="modal fade" id="filtrarBusqueda" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content modal-filtro">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4>Filtre su búsqueda</h4>
+                        </div>
+                        <div class="modal-body ">
+                            <fieldset>
+                                <div class="form-group">
+                                    <select class="selectpicker" data-style="green-select">
+                                        <option>Nuevos y Usados</option>
+                                        <option>Nuevos</option>
+                                        <option>Usados</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="selectpicker" data-style="green-select">
+                                        <option>Ciudad</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="selectpicker" data-style="green-select">
+                                        <option>Precio</option>
+                                    </select>
+                                    <div class="form-horizontal bootstrap-select">
+                                        <div class="clearfix filtro-campo">
+                                            <label class="col-sm-2 col-xs-3 control-label" for="inputEmail3">Desde $</label>
+                                            <div class="col-sm-10 col-xs-9">
+                                                <input type="email" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="clearfix filtro-campo">
+                                            <label class="col-sm-2 col-xs-3 control-label" for="inputEmail3">Hasta $</label>
+                                            <div class="col-sm-10 col-xs-9">
+                                                <input type="email" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <select class="selectpicker" data-style="green-select">
+                                        <option>Tipo de inmueble</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-inverse"> Filtrar resultados</button>
+                                <button class="btn btn-link" data-dismiss="modal">Cancelar</button>                            
+                            </fieldset>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->        
+        </div>
+        <ul class="inmuebles-estado inmuebles-nuevos clearfix row">
+            <li class="col-lg-4 col-md-4 col-sm-4">
+                <dl class="item">
+                    <dt class="title-item">
+                        <h4><a href="#">Torres del Bosque Reservado</a></h4>
+                        <i>Apartamento. Chicó. Bogotá.</i>
+                    </dt>
+                    <dd class="mas-info margin-bottom">
+                        <span class="descuento-inmueble"><b>-20%</b> Gastos de escrituración</span>
+                        <span class="tipo-inmueble">Proyecto</span>
+                        <figure>
+                            <a href="#">
+                            <img class="img-responsive" title="Torres del Bosque Reservado" alt="Torres del Bosque Reservado" src="img/img-clasificado-1.jpg">
+                            </a>
+                        </figure>
+                    	<div class="logo-constructora">
+                        	<img src="borrar/constructora.jpg" alt="Amarilo">
+                    	</div>
+                        <strong class="area-construida">Á. Priv.  300m2  l  Á. Const. 350m2</strong>
+                    </dd>
+                    <dd class="precio-item"><i>Desde</i>$300'000.000</dd>
+                    <dd class="contacto-inmueble"><span class="glyphicon glyphicon-envelope"></span> <a href="#" data-toggle="modal" data-target="#contactarVendedor">Contactar al vendedor</a></dd>
+                    <a href="#" class="btn btn-primary">Ver proyecto</a>
+                </dl>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-4">
+                <dl class="item inmueble-usado">
+                    <dt class="title-item">
+                        <i><a href="#">Apartamento. Chicó. Bogotá.</a></i>
+                    </dt>
+                    <dd class="mas-info">
+                        <s class="text-right hidden-md hidden-lg"><span>Antes:</span>$204'000.000</s>
+                        <figure>
+                            <a href="#"><img class="img-responsive" title="Torres del Bosque Reservado" alt="Torres del Bosque Reservado" src="img/img-clasificado-1.jpg"></a>
+                            <figcaption class="area-construida">Área:	300m2</figcaption>
+                        </figure>
+                    	<div class="logo-constructora">
+                        	<img src="borrar/constructora.jpg" alt="Amarilo">
+                    	</div>
+                        <s class="text-right hidden-sm hidden-xs"><span>Antes:</span>204'000.000</s>
+                    </dd>
+                    <dd class="precio-item"><i>Precio de feria</i>$300'000.000</dd>
+                    <dd class="contacto-inmueble"><span class="glyphicon glyphicon-envelope"></span> <a href="#" data-toggle="modal" data-target="#contactarVendedor">Contactar al vendedor</a></dd>
+                    <a href="#" class="btn btn-primary">Ver Inmueble</a>
+                </dl>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-4">
+                <dl class="item">
+                    <dt class="title-item">
+                        <h4><a href="#">Torres del Bosque Reservado</a></h4>
+                        <i>Apartamento. Chicó. Bogotá.</i>
+                    </dt>
+                    <dd class="mas-info margin-bottom">
+                        <span class="descuento-inmueble"><b>-2%</b> Gastos de escrituración</span>
+                        <span class="tipo-inmueble">Proyecto</span>
+                        <figure>
+                            <a href="#">
+                            <img class="img-responsive" title="Torres del Bosque Reservado" alt="Torres del Bosque Reservado" src="img/img-clasificado-1.jpg">
+                            </a>
+                        </figure>
+                    	<div class="logo-constructora">
+                        	<img src="borrar/constructora.jpg" alt="Amarilo">
+                    	</div>
+                        <strong class="area-construida">Á. Priv.  300m2  l  Á. Const. 350m2</strong>
+                    </dd>
+                    <dd class="precio-item"><i>Desde</i>$300'000.000</dd>
+                    <dd class="contacto-inmueble"><span class="glyphicon glyphicon-envelope"></span> <a href="#" data-toggle="modal" data-target="#contactarVendedor">Contactar al vendedor</a></dd>
+                    <a href="#" class="btn btn-primary">Ver proyecto</a>
+                </dl>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-4">
+                <dl class="item">
+                    <dt class="title-item">
+                        <h4><a href="#">Torres del Bosque Reservado</a></h4>
+                        <i>Apartamento. Chicó. Bogotá.</i>
+                    </dt>
+                    <dd class="mas-info margin-bottom">
+                        <span class="descuento-inmueble"><b>-20%</b> Gastos de escrituración</span>
+                        <span class="tipo-inmueble">Proyecto</span>
+                        <figure>
+                            <a href="#">
+                            <img class="img-responsive" title="Torres del Bosque Reservado" alt="Torres del Bosque Reservado" src="img/img-clasificado-1.jpg">
+                            </a>
+                        </figure>
+                    	<div class="logo-constructora">
+                        	<img src="borrar/constructora.jpg" alt="Amarilo">
+                    	</div>
+                        <strong class="area-construida">Á. Priv.  300m2  l  Á. Const. 350m2</strong>
+                    </dd>
+                    <dd class="precio-item"><i>Desde</i>$300'000.000</dd>
+                    <dd class="contacto-inmueble"><span class="glyphicon glyphicon-envelope"></span> <a href="#" data-toggle="modal" data-target="#contactarVendedor">Contactar al vendedor</a></dd>
+                    <a href="#" class="btn btn-primary">Ver proyecto</a>
+                </dl>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-4">
+                <dl class="item inmueble-usado">
+                    <dt class="title-item">
+                        <i><a href="#">Apartamento. Chicó. Bogotá.</a></i>
+                    </dt>
+                    <dd class="mas-info">
+                        <s class="text-right hidden-md hidden-lg"><span>Antes:</span>$204'000.000</s>
+                        <figure>
+                            <a href="#"><img class="img-responsive" title="Torres del Bosque Reservado" alt="Torres del Bosque Reservado" src="img/img-clasificado-1.jpg"></a>
+                            <figcaption class="area-construida">Área:	300m2</figcaption>
+                        </figure>
+                    	<div class="logo-constructora">
+                        	<img src="borrar/constructora.jpg" alt="Amarilo">
+                    	</div>
+                        <s class="text-right hidden-sm hidden-xs"><span>Antes:</span>204'000.000</s>
+                    </dd>
+                    <dd class="precio-item"><i>Precio de feria</i>$300'000.000</dd>
+                    <dd class="contacto-inmueble"><span class="glyphicon glyphicon-envelope"></span> <a href="#" data-toggle="modal" data-target="#contactarVendedor">Contactar al vendedor</a></dd>
+                    <a href="#" class="btn btn-primary">Ver Inmueble</a>
+                </dl>
+            </li>
+            <li class="col-lg-4 col-md-4 col-sm-4">
+                <dl class="item">
+                    <dt class="title-item">
+                        <h4><a href="#">Torres del Bosque Reservado</a></h4>
+                        <i>Apartamento. Chicó. Bogotá.</i>
+                    </dt>
+                    <dd class="mas-info margin-bottom">
+                        <span class="descuento-inmueble"><b>-2%</b> Gastos de escrituración</span>
+                        <span class="tipo-inmueble">Proyecto</span>
+                        <figure>
+                            <a href="#">
+                            <img class="img-responsive" title="Torres del Bosque Reservado" alt="Torres del Bosque Reservado" src="img/img-clasificado-1.jpg">
+                            </a>
+                        </figure>
+                    	<div class="logo-constructora">
+                        	<img src="borrar/constructora.jpg" alt="Amarilo">
+                    	</div>
+                        <strong class="area-construida">Á. Priv.  300m2  l  Á. Const. 350m2</strong>
+                    </dd>
+                    <dd class="precio-item"><i>Desde</i>$300'000.000</dd>
+                    <dd class="contacto-inmueble"><span class="glyphicon glyphicon-envelope"></span> <a href="#" data-toggle="modal" data-target="#contactarVendedor">Contactar al vendedor</a></dd>
+                    <a href="#" class="btn btn-primary">Ver proyecto</a>
+                </dl>
+            </li>
+        </ul>
+        </div>
+    </div><!-- container -->
+    <footer>
+    	<div class="bg-verde">
+            <div class="container">
+                <div class="col-lg-3 col-md-3 col-sm-4 info-oficinas">
+                    <a href="/"><img alt="Logo Metrocuadrado" src="img/logo-metro-footer.png"></a>
+                    <h5>Oficinas Metrocuadrado</h5>
+                    <address>
+                        Avenida Calle 26 No. 68B &ndash; 70<br>
+                        Casa Editorial El Tiempo, Bogotá, Colombia<br>
+                        Teléfonos servicio al cliente en Bogotá<br>
+                        (571) 426 6000 opción 3, opción 2<br>
+                        Fuera de Bogotá: 01 8000 110 990<br>
+                        PBX: (571) 426 6550 - 294 0100<br>
+                        FAX: (571) 294 0159 Opción: 7 Ext. 5919<br>
+                        Tel. Cali: (57) 321 205 6075<br>
+                        Tel. Medellín: (574) 250 7988 Ext. 153<br>
+                        Línea nacional: 01 8000 115 252<br>
+                        <a href="mailto:contactenos@metrocuadrado.com">contactenos@metrocuadrado.com</a> </p>            
+                    </address>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
+                    <ul class="menu-footer">
+                        <li>&raquo; Inicio</li>
+                        <li>&raquo; Buscar inmuebles Usados</li>
+                        <li>&raquo; Buscar po inmuebles nuevos</li>
+                        <li>&raquo; Participantes</li>
+                        <li>&raquo; Calculadora</li>
+                        <li>&raquo; Noticias</li>
+                        <li>&raquo; Contáctenos</li>
+                        <li>&raquo; Ayuda</li>
+                        <li>&raquo; Mapa del sitio</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 redes-sociales">
+                    <h6>Síguenos en:</h6>
+                    <a href="https://plus.google.com/u/0/112174026277288480186?rel=author" target="_blank" title="Google+">
+                        <img width="1" height="1" class="icoGooglePlus" src="img/img_trans.gif" alt="Google+">
+                    </a>
+                    <a href="http://www.facebook.com/metrocuadradocom" target="_blank" title="Facebook">
+                        <img width="1" height="1" class="icoFacebook" src="img/img_trans.gif" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com/metro_cuadrado" target="_blank" title="Twitter">
+                        <img width="1" height="1" class="icoTwitter" src="img/img_trans.gif" alt="Twitter">
+                    </a>
+                    <a href="http://www.youtube.com/user/METROCUADRADOcom" target="_blank" title="YouTube">
+                        <img width="1" height="1" class="icoYouTube" src="img/img_trans.gif" alt="YouTube">
+                    </a>
+                    <a href="http://pinterest.com/mtcuadra/" target="_blank" title="Pinterest">
+                        <img width="1" height="1" class="icoPinterest" src="img/img_trans.gif" alt="Pinterest">
+                    </a>            
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-sm-12">
+                    <div class="visible-xs nuestra-red">
+                        <a href="javascript:;" onClick="$('.moduloMapaNavegacion').slideToggle();$(this).toggleClass('toggleTriangle');$('html, body').animate({scrollTop: '10000px'}, 500);return false;" class="linkPortales toggleTriangle ">Mapa de navegación</a>
+                        <div class="moduloMapaNavegacion clearfix moduloColapsable">
+                            <ul>
+                                <li>Inicio</li>
+                                <li>Buscar inmuebles Usados</li>
+                                <li>Buscar po inmuebles nuevos</li>
+                                <li>Participantes</li>
+                                <li>Calculadora</li>
+                                <li>Noticias</li>
+                                <li>Contáctenos</li>
+                                <li>Ayuda</li>
+                                <li>Mapa del sitio</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <figure class="col-lg-1 col-md-2 col-sm-2"><img class="img-responsive" alt="Logo El Tiempo" src="img/logo-tiempo-footer.png" ></figure>
+                
+                <p class="col-lg-7 col-md-7 col-sm-8 copyright">Copyright &copy; <span id="gYearFooter"></span> Metrocuadrado. Usar este sitio implica que usted acepta nuestras <a class="thickbox" href="/disclaimer/politicas.html?keepThis=true&amp;TB_iframe=true&amp;height=450&amp;width=350" target="_blank">Políticas y Términos</a> Prohibida su reproducción total o parcial, así como su traducción a cualquier idioma sin autorización escrita de su titular.</p>
+                <a rel="nofollow" target="_blank" class="sicLogo col-lg-2 col-md-3 col-xs-5 col-sm-2" href="http://www.sic.gov.co/es/"><img src="img/superintendencia-footer.png" title="Industria y Comercia SUPERINTENDENCIA"></a>
+            </div><!-- container -->
+    	</div><!-- bg-verde -->
+    </footer><!-- footer -->
+<!-- JAVASCRIPT --> 
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/biblioteca-activadores.js"></script> 
+<script src="js/countdown-timer.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+	$( document ).ready(function(){
+		// Select personalizado
+		$('.selectpicker').selectpicker();	
+	});
+</script>
+
+</body>
+</html>
